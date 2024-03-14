@@ -1,93 +1,25 @@
-/*body{
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: auto;
-   width: auto;
-   opacity: 0.5;
-}*/
+body{
+   font-size: 16px;
+}
+
 .container{
-   height: 100vh;
-   display: grid;
-   grid-template-columns: 1fr 1fr ;
-   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.photo, .downloadResume{
-   grid-column: span 2;
+   height: 70px;
    display: flex;
-   justify-content: center;
-}
-
-.summary, .skills, .experience, .education, .additionalInfo, .contactInfo{
-   display: flex;
-   justify-content: center;
+   justify-content: space-evenly;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    align-items: center;
-   border: 1px solid black;
-   margin: auto;
-   width: 50%;
-   border-radius: 50%;
-   position: relative;
-}
-.tooltiptext {
-   text-align: left;
-   display: none;
-   background: white;
-   position: absolute;
-   text-indent: 0em;
-   z-index: 1;
-   
-   width: max-content; 
-   max-width: 2100px;
-   height: max-content; 
-   max-height: 2250px;
-   border: 1px solid black;
-   font-family: 'Times New Roman', Times, serif;
-   font-size: 20px;
-   top: -100px;        /* TAKIT: Changed here */
-   left: -100px; 
-   margin: 0;
-   --border: 0;
-   padding: 0;
-   --top:50%;
-   --transform:translateY(-50%);
-/* move to right */
-   --left:100%;
-   --margin-left:15px; 
-}
-
-
-.summary:hover .tooltiptext,  .skills:hover .tooltiptext, .experience:hover .tooltiptext, .education:hover .tooltiptext, 
-.additionalInfo:hover .tooltiptext, .contactInfo:hover .tooltiptext{
-   display: block;
- }
-
-.downloadResume{
-   grid-column: span 2;
-}
-
-img{
-   border-radius: 50%;
-   border: 2px solid black;
-}
-p{
-   white-space: pre;
-}
-
-.button {
-   display: block;
-   width: 115px;
-   height: 40px;
-   background: brown;
-   padding: 10px;
-   text-align: center;
-   border-radius: 5px;
-   color: white;
    font-weight: bold;
-   line-height: 25px;
+   font-size: 20px;
+   background-color: #9195F6;
+  box-shadow: 5px 10px #B7C9F2;
+}
+
+a{
+   color: whitesmoke;
    text-decoration: none;
 }
 
-a:hover {
-   cursor:pointer;
-   background-color: rosybrown;
-  }
+.summary{
+   height: 100vh;
+   background: linear-gradient(45deg, rgba(5, 176, 219, .2) 0%, rgba(11, 11, 11, .95) 85%) 100% no-repeat, url(https://exploding-heads-images.s3.us-east-2.amazonaws.com/website/black-blocks.jpg) 0 0 / cover no-repeat !important;
+}
