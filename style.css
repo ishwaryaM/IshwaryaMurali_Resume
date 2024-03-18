@@ -1,19 +1,19 @@
 body{
-   font-size: 16px;
+   font-size: 1em;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container{
    height: 70px;
    display: flex;
    justify-content: space-evenly;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    align-items: center;
    font-weight: bold;
    font-size: 20px;
    background-color: #F7418F;
 }
 
-a{
+.container > a{
    color: whitesmoke;
    text-decoration: none;
 }
@@ -24,10 +24,34 @@ a{
    grid-template-columns: 1fr 3fr;
    grid-template-rows: 1fr;
 }
-
 .ProfilePicture{
    border-right: 5px solid black;
-   display: flex;
-   justify-content: center;
-
 }
+
+.ProfilePicture > img{
+   margin-top: 30px;
+   margin-bottom: 50px;
+   margin-left: 130px;
+   border-radius: 50%;
+   border: 3px #F7418F solid;
+}
+
+
+address > a:link{
+   text-decoration: none;
+   color: black;
+}
+
+address > a:hover{
+   text-decoration: underline;
+   color: #F7418F;
+}
+
+a,p {
+   font-size: 1.5em;
+   display: inline-block;
+   text-decoration: none;
+   margin: 20px 0px 20px 90px;
+}
+
+
