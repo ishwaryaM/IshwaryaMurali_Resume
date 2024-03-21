@@ -1,41 +1,49 @@
 body{
-   font-size: 1em;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container{
+header{
    height: 70px;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: start;
    align-items: center;
-   font-weight: bold;
-   font-size: 20px;
-   background-color: #F7418F;
+   margin-bottom: 20px;
+   background-color: whitesmoke;
 }
 
 .container > a{
-   color: whitesmoke;
+   color: black;
    text-decoration: none;
+   margin: 20px 20px 20px 20px;
+   text-align: center;
+   /*border: 1px solid black;
+   border-radius: 10px;
+   padding: 10px;
+   color: #F7418F;
+   background-image: linear-gradient(#F7418F, whitesmoke);*/
 }
 
+.container > a:hover{
+   color: #F7418F;
+   
+}
 .summary{
    height: 90vh;
    display: grid;
    grid-template-columns: 1fr 3fr;
    grid-template-rows: 1fr;
 }
-.ProfilePicture{
+.contactinfo{
    border-right: 5px solid black;
 }
 
-.ProfilePicture > img{
+.contactinfo > img{
    margin-top: 30px;
    margin-bottom: 50px;
    margin-left: 130px;
    border-radius: 50%;
-   border: 3px #F7418F solid;
+   border: 3px black solid;
 }
-
 
 address > a:link{
    text-decoration: none;
@@ -47,7 +55,7 @@ address > a:hover{
    color: #F7418F;
 }
 
-a,p {
+a, .place {
    font-size: 1.5em;
    display: inline-block;
    text-decoration: none;
@@ -62,6 +70,25 @@ a,p {
    text-align: center;
    border-radius: 15px;
    color: white;
-   font-weight: bold;
 }
 
+.resume:hover{
+   color: black;
+}
+
+p{
+   font-size: 1.25em;
+   padding: 10px;
+   margin: 20px 20px 20px 20px;
+}
+
+h1{
+   font-size: 1.5em;
+   background-color: #F7418F;
+   color: whitesmoke;
+   border-radius: 10px;
+   padding: 10px;
+   margin: 20px 20px 20px 20px;
+   border: 1px solid black;
+   text-align: center;
+}
